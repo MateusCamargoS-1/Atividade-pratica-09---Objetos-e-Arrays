@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos e Arrays</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <form id="cadastro">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" required>
+
+            <div class="estaTrabalhando">
+                <label for="trabalhando">Está trabalhando?</label>
+                <input type="checkbox" id="trabalhando" class="check">
+            </div>
+
+            <div id="salarioDiv" style="display: none;">
+                <label for="salario">Salário:</label>
+                <input type="number" id="salario">
+            </div>
+
+            <button type="button" onclick="cadastrarPessoa()">Cadastrar</button>
+        </form>
+
+        <div id="listaPessoas">
+                <h2>Pessoas desempregadas:</h2>
+                <h2>Pessoas empregadas com salários menores que 2500:</h2>
+                <h2>Pessoas empregadas com salários maiores ou iguais a 2500:</h2>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
